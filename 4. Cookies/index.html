@@ -9,45 +9,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
   </head>
   <body>
 
     <h1>Création de <span>Cookies</span> 🍪</h1>
-    
+
     <div class="container">
+
       <form>
+
         <div class="input-group">
-          <label for="name">Son Nom</label>
+          <label for="name">Son nom</label>
           <input 
           type="text"
           id="name"
+          name="name"
           autocomplete="off"
-          required>
+          required
+          >
         </div>
 
         <div class="input-group">
-          <label for="value">Son Valeur</label>
+          <label for="value">Sa valeur</label>
           <input 
           type="text"
           id="value"
+          name="value"
           autocomplete="off"
-          required>
+          required
+          >
         </div>
 
         <div class="btns-container">
-          <button type="submmit"  class="create-cookie-btn">Créer</button>
-          <button type="button" class="create-cookie-btn">Afficher</button>
+          <button type="submit" class="create-cookie-btn">Créer</button>
+          <button type="button" class="display-cookie-btn">Afficher</button>
         </div>
-      </form>
 
+      </form>
+      
       <p class="info-txt"></p>
       <ul class="cookies-list"></ul>
 
     </div>
-
-    <div class="toats-container"></div>
-    
+    <div class="toasts-container"></div>
     <script src="app.js"></script>
   </body>
 </html>
